@@ -1,0 +1,45 @@
+Description: fix shebangs
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-11-08
+
+--- a/examples/clock.js
++++ b/examples/clock.js
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env node
++#!/usr/bin/node
+ 'use strict';
+ 
+ const Emittery = require('..');
+--- a/examples/clocktyped.ts
++++ b/examples/clocktyped.ts
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env npx ts-node
++#!/usr/bin/npx ts-node
+ import {setInterval} from 'timers';
+ import Emittery = require('..');
+ 
+--- a/examples/emit.js
++++ b/examples/emit.js
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env node
++#!/usr/bin/node
+ 
+ 'use strict';
+ 
+--- a/examples/emitonce.js
++++ b/examples/emitonce.js
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env node
++#!/usr/bin/node
+ 
+ 'use strict';
+ 
+--- a/examples/eventdata.js
++++ b/examples/eventdata.js
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env node
++#!/usr/bin/node
+ 
+ 'use strict';
+ 

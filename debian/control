@@ -1,0 +1,29 @@
+Source: node-emittery
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Yadd <yadd@debian.org>
+Testsuite: autopkgtest-pkg-nodejs
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , jest <!nocheck>
+ , node-p-timeout <!nocheck>
+Standards-Version: 4.6.0
+Homepage: https://github.com/sindresorhus/emittery#readme
+Vcs-Git: https://salsa.debian.org/js-team/node-emittery.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-emittery
+Rules-Requires-Root: no
+
+Package: node-emittery
+Architecture: all
+Depends:
+ ${misc:Depends}
+Description: Nodejs simple and modern async event emitter
+ Emitting events asynchronously is important for production code where you
+ want the least amount of synchronous operations. Since JavaScript is
+ single-threaded, no other code can run while doing synchronous operations.
+ For Node.js, that means it will block other requests, defeating the strength
+ of the platform, which is scalability through async. In the browser, a
+ synchronous operation could potentially cause lags and block user interaction.
+ .
+ emittery solves this providing a simple but powerful API.

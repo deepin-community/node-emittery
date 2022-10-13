@@ -1,0 +1,30 @@
+node-emittery (0.10.0-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+
+  [ Yadd ]
+  * Declare compliance with policy 4.5.1
+  * New upstream version 0.8.1
+  * Refresh patch
+  * Fix GitHub tags regex
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * New upstream version 0.10.0
+  * Update test: use jest to replace ava
+
+ -- Yadd <yadd@debian.org>  Tue, 16 Nov 2021 10:31:51 +0100
+
+node-emittery (0.7.2-2) unstable; urgency=medium
+
+  * Source-only upload
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 09 Nov 2020 06:25:13 +0100
+
+node-emittery (0.7.2-1) unstable; urgency=medium
+
+  * Initial release (Closes: #973946)
+
+ -- Xavier Guimard <yadd@debian.org>  Sun, 08 Nov 2020 09:14:47 +0100
