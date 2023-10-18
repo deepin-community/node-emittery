@@ -1,45 +1,45 @@
 Description: fix shebangs
-Author: Xavier Guimard <yadd@debian.org>
+Author: Yadd <yadd@debian.org>
 Forwarded: not-needed
-Last-Update: 2020-11-08
+Last-Update: 2022-09-17
 
 --- a/examples/clock.js
 +++ b/examples/clock.js
 @@ -1,4 +1,4 @@
 -#!/usr/bin/env node
 +#!/usr/bin/node
- 'use strict';
+ import process from 'node:process';
+ import Emittery from '../index.js';
  
- const Emittery = require('..');
 --- a/examples/clocktyped.ts
 +++ b/examples/clocktyped.ts
 @@ -1,4 +1,4 @@
 -#!/usr/bin/env npx ts-node
 +#!/usr/bin/npx ts-node
- import {setInterval} from 'timers';
- import Emittery = require('..');
- 
+ /* eslint-disable @typescript-eslint/no-floating-promises */
+ import process from 'node:process';
+ import {setInterval} from 'node:timers';
 --- a/examples/emit.js
 +++ b/examples/emit.js
 @@ -1,4 +1,4 @@
 -#!/usr/bin/env node
 +#!/usr/bin/node
+ import Emittery from '../index.js';
  
- 'use strict';
- 
+ const myEmitter = new Emittery();
 --- a/examples/emitonce.js
 +++ b/examples/emitonce.js
 @@ -1,4 +1,4 @@
 -#!/usr/bin/env node
 +#!/usr/bin/node
+ import Emittery from '../index.js';
  
- 'use strict';
- 
+ const myEmitter = new Emittery();
 --- a/examples/eventdata.js
 +++ b/examples/eventdata.js
 @@ -1,4 +1,4 @@
 -#!/usr/bin/env node
 +#!/usr/bin/node
+ import Emittery from '../index.js';
  
- 'use strict';
- 
+ const myEmitter = new Emittery();
