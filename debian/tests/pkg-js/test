@@ -1,1 +1,1 @@
-jest --ci --testRegex test/index.js
+ava test

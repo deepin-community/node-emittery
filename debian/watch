@@ -2,4 +2,4 @@ version=4
 opts=\
 dversionmangle=auto,\
 filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-emittery-$1/ \
- https://github.com/sindresorhus/emittery/releases .*/archive/.*/v?([\d\.]+).tar.gz
+ https://github.com/sindresorhus/emittery/tags .*/archive/.*/v?([\d\.]+).tar.gz
